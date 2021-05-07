@@ -1,73 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="my description">
     <title>Meera's page</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- css start -->
+    <style type="text/css">
+        header {
+            background-color: aquamarine;
+        }
+    </style>
+    <!-- css end -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bff7ea3e36.js" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
     <!-- header start -->
-    <header style="border: 1px solid red">  Logo and menu goes here</header>
+    <header class="container">
+        <img src="https://www.ironhack.com/assets/icons/ironhack_logos/logo.svg" class="logo-header">
+
+        <nav>
+            <a href="#">About</a>
+            <a href="#features">Features</a>
+            <a href="#">Contact</a>
+            <a class="button-link" href="#">Download CV</a>
+        </nav>
+    </header>
     <!-- header start -->
     <!-- Hero start -->
-    <div style="border: 1px solid yellow"> 
-    <h1>Heading 1</h1>
-    <p>Paragraph</p>
-    <button>button</button>
-    </div>
+    <section id="hero" class="container">
+        <h1>Heading 1</h1>
+        <p>Paragraph</p>
+        <button>button</button>
+    </section>
     <!-- Hero end -->
-    
+
     <!-- Blog start -->
-    <div style="border: 1px solid green">  
-        <article>
-            Title - Article 1
-            description
-            avatar photo
-            Author name
+    <section style="border: 1px solid" id="articles" class="container">
+        <article class="home-article">
+            <img src="css/img/govind-krishnan-pwPcYzyJTtY-unsplash.jpg" class="img-article">
+            <h3>Title - Article 1</h3>
+            <p>description</p>
+            <div class="container author-container">
+                <img src="/css/img/avatar_01.png" alt="Ina" class="author-image">
+                <p>Author name</p>
+            </div>
         </article>
-        <article>
-            Title - Article 2
-            description
-            avatar photo
-            Author name
+        <article class="home-article">
+            <img src="css/img/raimond-klavins-os-Y7bCIfuA-unsplash.jpg" class="img-article">
+            <h3>Title - Article 2</h3>
+            <p>description</p>
+            <div class="container author-container">
+                <img src="/css/img/avatar_02.png" alt="Julien" class="author-image">
+                <p>Author name</p>
+            </div>
         </article>
-        <article>
-            Title - Article 3
-            description
-            avatar photo
-            Author name
+        <article class="home-article">
+            <img src="css/img/sateesh-reddy-patlolla-ds_bUqGISJA-unsplash.jpg" class="img-article">
+            <h3>Title - Article 3</h3>
+            <p>description</p>
+            <div class="container author-container">
+                <img src="/css/img/avatar_03.png" alt="Lenny" class="author-image">
+                <p>Author name</p>
+            </div>
         </article>
-       
-    </div>
+
+    </section>
     <!-- Blog end -->
     <!-- Features start -->
-    <div>
-        Features1
-        Features2
-        Features3
-    </div>
+    <section id="features" class="container">
+        <div class="container feature-card">
+            <span class="icon-feature"><i class="fas fa-compress-arrows-alt"></i></span>
+            <div>
+                <h4>Feature 1</h4>
+                <p>Feauture discription</p>
+            </div>
+        </div>
+        <div  class="container feature-card">
+            <span class="icon-feature"><i class="fas fa-cookie-bite"></i></span>
+            <div>
+                <h4>Feature 2</h4>
+                <p>Feauture discription</p>
+            </div>
+        </div>
+        <div  class="container feature-card">
+            <span class="icon-feature"><i class="fas fa-cocktail"></i></span>
+            <div>
+                <h4>Feature 3</h4>
+                <p>Feauture discription</p>
+            </div>
+        </div>
+        <div class="container feature-card">
+            <span class="icon-feature"><i class="fas fa-couch"></i></span>
+            <div >
+                <h4>Feature 4</h4>
+                <p>Feauture discription</p>
+            </div>
+        </div>
+    </section>
     <!-- Features end -->
     <!-- Contact start -->
-    <div>Title Heading 3
-        Name 
-        Email
-        Message
-    </div>
+    <section class="container" id="contact">
+        <div class="contact-30">
+            <h3>Title Heading 3</h3>
+        </div>
+       
+        <div class="contact-70">
+            <form action="#">
+                <label for="name">Name</label>
+                <input id="name" placeholder="John Snow"><br><br>
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="JohnSnow@gmail.com"><br><br>
+                <label for="message">Name</label>
+                <textarea id="message" rows=5 placeholder="Write your message"></textarea><br><br>
+
+                <input type="checkbox" id="terms">
+                <label for="terms">I accept the terms and conditions</label><br><br>
+                <input type="submit" value="Send Message"><br><br>
+
+            </form>
+        </div>
+    </section>
     <!-- Contact end -->
     <!-- Footer start -->
-    <footer>About us
-        Features
-        Contact Us
-        Social media
-        Fscebook
-
-
-
+    <footer class="container">
+        <div>
+            <a href="#">About</a>
+            <a href="#">Features</a>
+            <a href="mailto:meeraprakash001@gmail.com">Mail Us</a>
+            <a href="tel:+919886677168">Call Us</a>
+        </div>
+        <div>
+            <h5>Follow Us</h5>
+            <a href="www.facebook.com" class="menu" target="_blank"><span class="10px"><i class="fab fa-facebook fa-2x"></i></span></a>
+            <a href="#" class="menu"><span class="icon-social"></span><i class="fab fa-instagram fa-2x"></i></span></a>
+            <a href="#" class="menu"><span class="icon-social"></span><i class="fab fa-twitter fa-2x"></i></span></a>
+            <a href="#" class="menu"><span class="icon-social"></span><i class="fab fa-medium-m fa-2x"></i></span></a>
+        </div>
     </footer>
     <!-- Footer end -->
 </body>
-    
 
 </html>
